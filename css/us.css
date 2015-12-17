@@ -1,0 +1,88 @@
+* {
+	font-family: "Microsoft YaHei";
+	letter-spacing: 1px;
+}
+.us-version {
+	background:url(../images/logo-blue.png) center center no-repeat;
+	background-size:180px;
+	background-color:#ffffff;
+	height:160px;
+}
+.us-version > span {
+	display:inline-block;
+	padding-top:120px;
+	color:#a0a0a0;
+}
+.us-content {
+	padding-top:20px;
+}
+.us-content > a {
+	display:block;
+	line-height:44px;
+	background-color:#ffffff;
+	margin-top:1px;
+	text-indent:10px;
+	color:#222222;
+	position:relative;
+}
+.us-content > a:after {
+	content: " ";
+    display: block;
+	background:url(../images/icon-next.png) top left no-repeat;
+	background-size:8px;
+	width:8px;
+	height:14px;
+	position:absolute;
+	right:10px;
+	top:13px;
+	z-index:99;
+}
+.but-submit {
+	padding-top: 30px;
+	margin: auto;
+	width: 96%;
+}
+.but-submit button{
+	background: #e44c0b;
+	color: #FFFFFF;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	line-height:44px;
+	width:100%;
+	font-size:16px;
+}
+.us-content1 > a {
+	display: block;
+	line-height: 44px;
+	background-color: #ffffff;
+	margin-bottom: 1px;
+	text-indent: 10px;
+	color: #222222;
+	position: relative;
+}
+
+
+/*用户协议css样式*/
+.protocol{
+	background: #FFFFFF;
+}
+.p_title{
+	color: #222;
+	line-height: 50px;
+	font-family: "微软雅黑";
+}
+.p_text{
+	padding: 0px 10px;
+	margin: 15px 0px;
+}
+.p_text1{
+	font-weight: bold;
+	line-height: 25px;
+	color: #222222;
+}
+.p_article{
+	line-height: 18px;
+	color: #222222;
+	font-family: "微软雅黑";
+}

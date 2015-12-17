@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>地图确认</title>
+<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0"/>
+<link type="text/css" rel="stylesheet" href="css/general.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/cart.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/map.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+<link href="lib/common.css" rel="stylesheet"/>
+<link href="css/uc.css" rel="stylesheet"/>
+<style id="J_style"></style>
+<script type="text/javascript">
+	! function() {
+		function b() {
+			var e, b = document.getElementById("J_style"),
+				c = document.documentElement.clientWidth || document.body.clientWidth,  //可视区域的宽高和body的宽高一样
+				d = 1; 
+			d = c / 640, e = 100 * d,
+			b.innerHTML = "html{font-size:" + e + "px;}", a = d;
+			window._z = d;
+		}
+		var a = 0;
+		b(), window.addEventListener("resize", b);
+	}();
+	window._idx = 10;
+</script>
+</head>
+<body style="background: #FFFFFF;">
+	<!--配送地址超出范围start-->
+	<div style="display: none;">
+		<div class="mask"></div>
+		<div class="coupon_succeed" style="display: block;">
+			<p>您的收货地址超出配送范围，请重新输入！</p>
+			<div class="coupon_ok">好的</div>
+		</div>
+	</div>
+	<!--配送地址超出范围end-->
+	
+	<div id="header">
+	    <div class="pull-left">
+	        <div class="return"><a href="uc.html"></a></div>
+	    </div>
+	    <div class="pull-right">
+	        <a class="search" href="javascript:">取消</a>
+	    </div>
+	    <div class="text-center">
+	        <div class="search-input">
+	            <input type="text" name="wd"/>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="o_map_img" class="ofh">
+		<img src="images/map.png" class="fl"/>
+	</div>
+	<div class="o_map_add">
+		<div>全部</div>
+	</div>
+	<ul class="o_map_select ofh">
+		<li>
+			<div class="ofh">
+				<img src="images/gprs.png" class="fl o_map_gprs"/>
+				<span style="color: #FE912C;">[当前]</span>
+				<div class="fl">第三置业大厦</div>
+			</div>
+			<div class="o_map_specific">北京市朝阳区曙光西里甲1号</div>
+		</li>
+		<li>
+			<div class="ofh">
+				<img src="images/gprs.png" class="fl o_map_gprs"/>
+				<div class="fl">静安东里</div>
+			</div>
+			<div class="o_map_specific">北京市朝阳区</div>
+		</li>
+		<li>
+			<div class="ofh">
+				<img src="images/gprs.png" class="fl o_map_gprs"/>
+				<div class="fl">众信旅游（三元桥店）</div>
+			</div>
+			<div class="o_map_specific">北京市朝阳区曙光西里甲1号商业10号</div>
+		</li>
+		<li>
+			<div class="ofh">
+				<img src="images/gprs.png" class="fl o_map_gprs"/>
+				<div class="fl">中青旅（三元桥门市店）</div>
+			</div>
+			<div class="o_map_specific">北京市朝阳区曙光西里甲1号第三置业B座</div>
+		</li>
+		<li>
+			<div class="ofh">
+				<img src="images/gprs.png" class="fl o_map_gprs"/>
+				<div class="fl">静安东里</div>
+			</div>
+			<div class="o_map_specific">北京市朝阳区</div>
+		</li>
+		<li>
+			<div class="ofh">
+				<img src="images/gprs.png" class="fl o_map_gprs"/>
+				<div class="fl">众信旅游（三元桥店）</div>
+			</div>
+			<div class="o_map_specific">北京市朝阳区曙光西里甲1号商业10号</div>
+		</li>
+		<li>
+			<div class="ofh">
+				<img src="images/gprs.png" class="fl o_map_gprs"/>
+				<div class="fl">中青旅（三元桥门市店）</div>
+			</div>
+			<div class="o_map_specific">北京市朝阳区曙光西里甲1号第三置业B座</div>
+		</li>
+	</ul>
+	<div id="navbar">
+	    <div class="text-center bg-white">
+	        <a href="/" class="inline-block fz-12 home">首页</a>
+	        <a href="#" class="inline-block fz-12 category">点餐</a>
+	        <a href="#" class="inline-block fz-12 cart"><span><span>12</span></span>购物车</a>
+	        <a href="#" class="inline-block fz-12 mine col-red">我的</a>
+	    </div>
+	</div>
+	<div id="footer"></div>
+	<script src="lib/lib.min.js"></script>
+	<script src="js/home.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../lib/common.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="xianshi.css" rel="stylesheet"/>
+    <style>
+    	.col-gray{
+    		color: #A0A0A0;
+    	}
+    	.not-available {
+			background: url("cart-2.png") center center no-repeat;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			overflow: hidden;
+			background-size: 100% auto;
+		}
+		i.icon-word {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 18px;
+			width: 0;
+			margin-right: 0px;
+		}
+		i.time {
+			background: url(time.png) no-repeat;
+			width: 1.5rem;
+			height: 1.2rem;
+			background-size: 80%;
+		}
+		.icon-hour{
+			background: #A0A0A0;
+			color: #FFFFFF;
+			padding: 2px 5px;
+			font-size: 0.2rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 0px 3px;
+		}
+		.xianshi-colon{	
+			padding: 2px 5px;
+			font-size: 0.2rem;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.bag-col{
+			background: #e44c0b;
+		}
+		.icon_end{
+			padding: 0px 5px;
+			font-size: 0.8rem;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.sell_out{
+			width: 4rem;
+			height: 4rem;
+			z-index: 900;
+			position: absolute;
+			left: 50%;
+			margin-left: -32px;
+			top: 50%;
+			margin-top: -32px;
+		}
+		.finish{
+			width: 4rem;
+			height: 4rem;
+			z-index: 900;
+			position: absolute;
+			left: 50%;
+			margin-left: -32px;
+			top: 50%;
+			margin-top: -32px;
+		}
+    </style>
+</head>
+<body>
+<!-- 公共头开始 -->
+<div id="header">
+    <!--<div class="pull-left">
+        <a class="return" href="javascript:_.go();"></a>
+        <a class="locate fz-18" href="javascript:location.reload(true);">北京</a>
+    </div>-->
+    <div class="text-center">
+        <a class="fz-18">限时抢购</a>
+    </div>
+</div>
+<!-- 公共头结束 -->
+<div class="module" id="m-status">
+    <div class="text-center fz-15 bg-red col-white" data-start-time="1447304515182" data-end-time="1546344515182"></div>
+</div>
+<div class="module" id="m-foods">
+    <ul class="foods bg-body">
+        <li data-remain="250">
+        	<div style="width:100px;height:100px;float: left;position: relative;">
+	        	<img src="sell_out.png" alt="" class="sell_out"/>
+	            <a href="#" class="img-wrapper pull-left">
+	            	<img src="this-week-food-1.png" alt=""/>
+	            </a>
+            </div>
+
+            <div class="content">
+                <div class="title fz-16 text-overflow col-gray">腰果西芹炒百合</div>
+                <div class="activity">
+                    <i class="icon-word time"></i>
+                    <span class="icon-hour" id="xianshi—hour">01</span>
+                    <span class="col-gray xianshi-colon">:</span>
+                    <span class="icon-hour" id="xianshi—minute">38</span>
+                    <span class="col-gray xianshi-colon">:</span>
+                    <span class="icon-hour" id="xianshi-second">29</span>
+                </div>
+                <div class="prices">
+                    <span class="price fz-18 col-gray">￥15&nbsp;&nbsp;</span>
+                    <span class="price fz-12 text-delete col-gray">￥29</span>
+                </div>
+                <div class="col-red  fz-12 col-gray">剩余0份</div>
+                <div class="add-cart"><span data-id="100" class="btn-img not-available"></span></div>
+            </div>
+        </li>
+        <li data-remain="250">
+            <a href="#" class="img-wrapper pull-left"><img src="this-week-food-1.png" alt=""/></a>
+
+            <div class="content">
+                <div class="title fz-16 text-overflow">腰果西芹炒百合</div>
+                <div class="activity">
+                    <i class="icon-word time"></i>
+                    <span class="icon-hour bag-col" id="xianshi—hour">11</span>
+                    <span class="col-red xianshi-colon">:</span>
+                    <span class="icon-hour bag-col" id="xianshi—minute">38</span>
+                    <span class="col-red xianshi-colon">:</span>
+                    <span class="icon-hour bag-col" id="xianshi-second">59</span>
+                </div>
+                <div class="prices">
+                    <span class="price fz-18 col-red">￥15&nbsp;&nbsp;</span>
+                    <span class="price fz-12 text-delete">￥29</span>
+                </div>
+                <div class="col-red fz-12">仅剩250份</div>
+                <div class="add-cart"><span data-id="100" class="btn-img round btn-add-cart in-list"></span></div>
+            </div>
+        </li>
+        <li data-remain="0">
+        	<div style="width:100px;height:100px;float: left;position: relative;">
+	        	<img src="finish.png" alt="" class="finish"/>
+	            <a href="#" class="img-wrapper pull-left">
+	            	<img src="this-week-food-1.png" alt=""/>
+	            </a>
+			</div>
+            <div class="content">
+                <div class="title fz-16 text-overflow col-gray">腰果西芹炒百合</div>
+                <div class="activity">
+                    <i class="icon-word time"></i>
+                    <span class="col-gray icon_end">已结束</span>
+                </div>
+                <div class="prices">
+                    <span class="price fz-18 col-gray">￥15&nbsp;&nbsp;</span>
+                    <span class="price fz-12 text-delete col-gray">￥29</span>
+                </div>
+                <div class="col-red  fz-12 col-gray">剩余230份</div>
+                <div class="add-cart"><span data-id="100" class="btn-img not-available"></span></div>
+            </div>
+        </li>
+        <li data-remain="250">
+            <a href="#" class="img-wrapper pull-left"><img src="this-week-food-1.png" alt=""/></a>
+
+            <div class="content">
+                <div class="title fz-16 text-overflow">腰果西芹炒百合</div>
+                <div class="activity">
+                    <i class="icon-word time"></i>
+                    <span class="icon-hour bag-col" id="xianshi—hour">11</span>
+                    <span class="col-red xianshi-colon">:</span>
+                    <span class="icon-hour bag-col" id="xianshi—minute">38</span>
+                    <span class="col-red xianshi-colon">:</span>
+                    <span class="icon-hour bag-col" id="xianshi-second">59</span>
+                </div>
+                <div class="prices">
+                    <span class="price fz-18 col-red">￥15&nbsp;&nbsp;</span>
+                    <span class="price fz-12 text-delete">￥29</span>
+                </div>
+                <div class="col-red fz-12">仅剩250份</div>
+                <div class="add-cart"><span data-id="100" class="btn-img round btn-add-cart in-list"></span></div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- 公共底部开始 -->
+<div id="footer">
+</div>
+<!-- 公共导航 -->
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="../home/home.html" class="home col-red">首页</a>
+        <a href="../" class="category">分类</a>
+        <a href="../cart/cart.html" class="cart"><span><span class="cart-num">12</span></span>购物车</a>
+        <a href="../login/login.html" class="mine">我的</a>
+    </div>
+</div>
+</body>
+<!-- 公共js库引入 -->
+<script src="../lib/zepto-1.1.6.js"></script>
+<script src="../lib/zepto.fx.js"></script>
+<script src="../lib/zepto.cookie.js"></script>
+<script src="../lib/zepto.data.js"></script>
+<script src="../lib/zepto.touch.js"></script>
+<script src="../lib/zepto.unslider.js"></script>
+<script src="../lib/common.js"></script>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入
+<script src="xianshi.js"></script>-->
+</html>

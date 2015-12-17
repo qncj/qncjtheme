@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>分类</title>
+<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0"/>
+<link type="text/css" rel="stylesheet" href="css/general.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/cart.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/classify.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+<link href="lib/common.css" rel="stylesheet"/>
+<link href="css/uc.css" rel="stylesheet"/>
+<style id="J_style"></style>
+<script type="text/javascript">
+	! function() {
+		function b() {
+			var e, b = document.getElementById("J_style"),
+				c = document.documentElement.clientWidth || document.body.clientWidth,  //可视区域的宽高和body的宽高一样
+				d = 1; 
+			d = c / 640, e = 100 * d,
+			b.innerHTML = "html{font-size:" + e + "px;}", a = d;
+			window._z = d;
+		}
+		var a = 0;
+		b(), window.addEventListener("resize", b);
+	}();
+	window._idx = 10;
+</script>
+<script type="text/javascript">
+	$(function(){	
+		$('.classify_l_nav a').click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			$('.classify_con_rdiv>div:eq('+$(this).index()+')').show().siblings().hide();	
+		})
+	})
+</script>
+</head>
+<body style="background: #FFFFFF;">
+	<div id="header">
+	    <div class="pull-left">
+	        <div class="return"><a href="uc.html"></a></div>
+	    </div>
+	    <div class="pull-right">
+	        <div class="message has-new"><a href="javascript:"></a></div>
+	    </div>
+	    <div class="text-center">
+	             <div class="fz-18"><a href="javascript:">分类</a></div>
+	    </div>
+	</div>
+	<div class="classify_con">
+		<div class="classify_con_l fl">
+			<div class="classify_l_nav">
+				<a href="javascript:;"  class="on">全部菜品</a>
+				<a href="javascript:;">活动菜品</a>
+				<a href="javascript:;">新品推荐</a>
+				<a href="javascript:;">微波炉餐</a>
+				<a href="javascript:;">清热祛火</a>
+				<a href="javascript:;">精品素菜</a>
+				<a href="javascript:;">美味荤菜</a>
+				<a href="javascript:;">大鱼大肉</a>
+				<a href="javascript:;">营养汤羹</a>
+			</div>
+		</div>
+		<!--右边-->
+		<div class="classify_con_rdiv fr">
+			<div class="classify_con_r fr">
+				<ul>
+					<li>
+						<div class="c_column_title">全部菜品</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">腰果西芹炒百合</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name3.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">香辣土豆片炒五花肉</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name3.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">香辣土豆片炒五花肉</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name3.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">香辣土豆片炒五花肉</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name3.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">香辣土豆片炒五花肉</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="classify_con_r fr">
+				<ul>
+					<li>
+						<div class="c_column_title">活动菜品</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name1.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">麻辣香锅</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name2.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">松仁玉米</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="classify_con_r fr">
+				<ul>
+					<li>
+						<div class="c_column_title">新品推荐</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name1.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">麻辣香锅</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name2.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">松仁玉米</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="classify_con_r fr">
+				<ul>
+					<li>
+						<div class="c_column_title">微波炉餐</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name1.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">麻辣香锅</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name2.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">松仁玉米</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="classify_con_r fr">
+				<ul>
+					<li>
+						<div class="c_column_title">清热祛火</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name1.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">麻辣香锅</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name2.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">松仁玉米</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="classify_con_r fr">
+				<ul>
+					<li>
+						<div class="c_column_title">精品素菜</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name1.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">麻辣香锅</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name2.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">松仁玉米</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="classify_con_r fr">
+				<ul>
+					<li>
+						<div class="c_column_title">美味荤菜</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name1.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">麻辣香锅</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name2.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">松仁玉米</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="classify_con_r fr">
+				<ul>
+					<li>
+						<div class="c_column_title">大鱼大肉</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name1.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">麻辣香锅</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="c_column_dish">
+							<img src="images/dish_name2.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">松仁玉米</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="classify_con_r fr">
+			<ul>
+				<li>
+					<div class="c_column_title">营养汤羹</div>
+					<div class="c_column_dish">
+						<img src="images/dish_name1.png" class="c_dish_img fl"/>
+						<div class="fl c_dish_information">
+							<span class="c_dish_name fl">麻辣香锅</span>
+							<div class="c_dish_introduction">
+								<div class="c_dish_pointer fl">
+									<img src="images/seckill.png"/>
+									<img src="images/set.png"/>
+									<img src="images/seckill.png"/>
+									<img src="images/set.png"/>
+								</div>
+								<div class="c_dish_price fl">
+									<span class="c_current_price fl">￥19</span>
+									<span class="c_original_price">￥25</span>
+								</div>
+							</div>
+							<div class="c_dish_cart fr">
+								<img src="images/cart.png"/>
+							</div>
+						</div>
+					</div>
+					<div class="c_column_dish">
+						<img src="images/dish_name2.png" class="c_dish_img fl"/>
+						<div class="fl c_dish_information">
+							<span class="c_dish_name fl">松仁玉米</span>
+							<div class="c_dish_introduction">
+								<div class="c_dish_pointer fl">
+									<img src="images/seckill.png"/>
+									<img src="images/set.png"/>
+									<img src="images/seckill.png"/>
+									<img src="images/set.png"/>
+								</div>
+								<div class="c_dish_price fl">
+									<span class="c_current_price fl">￥19</span>
+									<span class="c_original_price">￥25</span>
+								</div>
+							</div>
+							<div class="c_dish_cart fr">
+								<img src="images/cart.png"/>
+							</div>
+						</div>
+					</div>
+					<div class="c_column_dish">
+							<img src="images/dish_name3.png" class="c_dish_img fl"/>
+							<div class="fl c_dish_information">
+								<span class="c_dish_name fl">香辣土豆片炒五花肉</span>
+								<div class="c_dish_introduction">
+									<div class="c_dish_pointer fl">
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+										<img src="images/seckill.png"/>
+										<img src="images/set.png"/>
+									</div>
+									<div class="c_dish_price fl">
+										<span class="c_current_price fl">￥19</span>
+										<span class="c_original_price">￥25</span>
+									</div>
+								</div>
+								<div class="c_dish_cart fr">
+									<img src="images/cart.png"/>
+								</div>
+							</div>
+						</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	
+	<div id="navbar">
+	    <div class="text-center bg-white">
+	        <a href="/" class="inline-block fz-12 home">首页</a>
+	        <a href="#" class="inline-block fz-12 category">点餐</a>
+	        <a href="#" class="inline-block fz-12 cart"><span><span>12</span></span>购物车</a>
+	        <a href="#" class="inline-block fz-12 mine col-red">我的</a>
+	    </div>
+	</div>
+	<div id="footer">
+	</div>
+</body>
+</html>
+

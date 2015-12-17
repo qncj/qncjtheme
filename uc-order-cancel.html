@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>我的订单</title>
+    <link href="lib/common.css" rel="stylesheet"/>
+    <link href="css/uc.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="header">
+    <div class="pull-left">
+        <div class="return"><a href="uc.html"></a></div>
+    </div>
+    <div class="pull-right">
+        <div class="message has-new"><a href="javascript:"></a></div>
+    </div>
+    <div class="text-center">
+             <div class="fz-18"><a href="javascript:">我的订单</a></div>
+    </div>
+</div>
+<div id="uc_body">
+<div class="uc-body col-gray">
+             <ul>
+              <li class="fz-16 plist ">
+                 <span> 退款金额：</span><span class="pull-right">¥30</span>
+              </li>
+             </ul>
+             <ul>
+              <li class="fz-16 ">
+                <span><img src="images/uc/uco2.png">退款原因</span>
+                <span class="pull-right">
+                </span> 
+              </li>
+              <li class="fz-13 plist">
+
+                 <div><span><input type="radio" id="radio1" class="regular-radio" name="reason" checked="checked" /> 
+                            <label for="radio1"></label>
+                 错了，买多了</span></div>
+                 </li>
+                <li class="fz-13 plist"> <div><span>
+                <input type="radio" id="radio2" class="regular-radio" name="reason" /> 
+                           <label for="radio2"></label>
+                地址、电话填写有误</span></div>
+                </li>
+                 <li class="fz-13 plist"><div><span>
+                 <input type="radio" id="radio3" class="regular-radio" name="reason" />
+                                    <label for="radio3"></label>
+                  计划有变、不想要了</span></div>
+                 </li>
+                 <li class="fz-13 plist"><div><span>
+                 <input type="radio" id="radio4" class="regular-radio" name="reason" />
+                              <label for="radio4"></label>
+                  送的太慢，等的太久了</span></div>
+                 </li>
+                 <li class="fz-13 plist"><div><span>
+                 <input type="radio" id="radio5" class="regular-radio" name="reason" />
+                              <label for="radio5"></label> 其他</span></div>
+              </li>
+             </ul>
+ <ul>
+              <li class="fz-16 ">
+                <span><textarea name="a" style="width:100%;height:80px;" placeholder="请详细描述您遇到的问题，有助于更快处理退款" ></textarea></span>
+               
+              </li>
+              </ul>
+          
+</div>
+<div class="text-center uc-foot col-gray fz-13">
+            <span class="btn1 bg-red col-white fz-18"> <a href="javascript:show('#filter-success');" >提交</a></span>
+</div>
+
+</div>
+
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="/" class="inline-block fz-12 home">首页</a>
+        <a href="#" class="inline-block fz-12 category">点餐</a>
+        <a href="#" class="inline-block fz-12 cart"><span><span>12</span></span>购物车</a>
+        <a href="#" class="inline-block fz-12 mine col-red">我的</a>
+    </div>
+</div>
+<div id="footer">
+</div>
+<div class="overlay-container hidden" id="filter-success">
+    <div class="overlay-content-container">
+        <div class="overlay-content bg-white col-gray fz-18 text-center uc-body cancel">
+            <ul>
+              <li class="fz-16 plist ">
+                  <span>提交成功，请耐心等待</span>
+</li><li>
+            <span class="col-red "><a href="javascript:hide('#filter-success');">确定</a></span>
+              </li>
+             </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script src="lib/lib.min.js"></script>
+<script src="js/home.js"></script>
+<script>
+function show(id){
+$(id).removeClass('hidden');
+
+}
+function hide(id){
+$(id).addClass('hidden');
+
+}
+</script>
+</html>

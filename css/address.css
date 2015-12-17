@@ -1,0 +1,50 @@
+.address_div{
+	width: 100%;
+	float: left;
+	background: #FFFFFF;
+}
+.address_div li{
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #EDEDED;
+}
+.address_div li input{
+	float: left;
+	margin: 0.25rem 20px;
+	height: 0.25rem;
+	padding: 5px;
+	border: none;
+	outline:none;
+	font-size: 0.25rem;
+	width: 3.8rem;
+}
+.address_div li span{
+	float: left;
+	font-size: 0.25rem;
+	line-height: 1rem;
+	width: 80px;
+	text-align: right;
+}
+.new_save_address{
+	float: left;
+	width:100%;
+}
+.new_save_address button{
+	background: #e44c0b;
+	color: #FFFFFF;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	float: left;
+	line-height: 0.8rem;
+	margin: 30px 0.2rem 0px;
+	width: 94%;
+	font-size: 0.28rem;
+}
+
+/*地址选择css样式*/
+.choose_add li{
+	float: left;
+	background: #FFFFFF;
+	margin-bottom: 0.2rem;
+}

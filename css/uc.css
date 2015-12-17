@@ -1,0 +1,210 @@
+/*公用样式开始*/
+/* RADIO */
+.fz-36{font-size: 36px;}
+.rol{
+   -webkit-appearance: none;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+margin-right: 5px;
+width: 25px;line-height: 25px;
+}
+.regular-radio {
+  display: none;
+}
+
+.regular-radio + label {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  padding: 9px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  float: left;
+margin-right: 5px;
+}
+
+.regular-radio:checked + label:after {
+  content: ' ';
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  position: absolute;
+  top: 3px;
+  background: #99a1a7;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+  text-shadow: 0px;
+  left: 3px;
+  font-size: 32px;
+}
+
+.regular-radio:checked + label {
+  background-color: #e9ecee;
+  color: #99a1a7;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.regular-radio + label:active, .regular-radio:checked + label:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.big-radio + label {
+  padding: 16px;
+}
+
+.big-radio:checked + label:after {
+  width: 24px;
+  height: 24px;
+  left: 4px;
+  top: 4px;
+}
+/*RADIOend*/
+
+.arrow-right {  
+       width: 13px;
+       height: 13px;
+border-right: 1px solid rgb(227, 76, 11);
+border-top: 1px solid rgb(227, 76, 11);
+transform:rotate(45deg);
+-webkit-transform:rotate(45deg);
+margin-bottom: 2px;
+    } 
+.arrow-down {  
+       width: 8px;
+       height: 8px;
+border-right: 1px solid #030303;
+border-top: 1px solid #030303;
+transform: rotate(135deg);
+-webkit-transform:rotate(135deg);
+margin: 0px 5px;
+  } 
+.arrow-up {  
+       width: 8px;
+       height: 8px;
+border-right: 1px solid #030303;
+border-top: 1px solid #030303;
+transform: rotate(315deg);
+-webkit-transform:rotate(315deg);
+margin: 2px 5px;
+    } 
+.bod-red1{border:1px #e34c0b solid;padding: 2px;
+	 -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;            /* W3C syntax */
+}
+.btn{
+ -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;  
+    padding:1px;
+    margin: 3px;
+}
+.btn1{width: 78%;
+ -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;  
+    display: block;padding:2% 10%;
+    margin: 1px 0;
+}
+.btn1:hover{background-color:#fe912c;}
+.btn1.h2{width:80%;}
+.btn1.h2:hover {color:#fff;}
+.btn1.m2{margin-top: 5%;}
+
+.bod-gray1{
+  border:1px solid #a0a0a0;
+  padding: 2px;margin: 2px 5px;
+	 -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;            /* W3C syntax */
+}
+.btn2{
+ -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;  
+    display: block;
+    padding:1em;
+    margin: 0;
+}
+/*公用样式结束*/
+/*会员中心首页开始*/
+.uc-top{
+ background: url("img/uc-top.jpg") center center no-repeat;
+  background-size: 100% 100%;
+  width:100%;
+  height: 88px;
+  padding-top: 20px;
+}
+.uc-tx img{width:50px;}
+.uc-phone {color: #fff;}
+
+.uc-info {overflow: hidden;}
+.uc-info ul{width: 20%;float: left;margin: 3% 6%;}
+.uc-info li{line-height: 25px;font-weight: 1px;}
+
+.uc-menu ul{width: 100%;overflow: hidden;margin: 2% 0;}
+.uc-menu li{padding: 5%;background-color: #fff;margin-top: 1px;}
+.uc-menu li img{width:18px;float: left;margin-right: 5px;}
+
+.uc-foot{padding: 2%;}
+/*会员中心首页结束*/
+
+/*订单列表开始*/
+.uc-order-tab {overflow: hidden;}
+.uc-order-tab ul{width: 15%;float: left;margin: 3% 2%;}
+.uc-order-tab li{line-height: 15px;font-weight: 1px;}
+
+.uc-body ul{width: 100%;overflow: hidden;margin: 2% 0;}
+.uc-body li{padding: 3%;background-color: #fff;margin-top: 1px;}
+.uc-body li img{width:22px;float: left;margin-right: 5px;margin-top: -3px;}
+.uc-body .plist div{width: 100%;padding: 1% 0;}
+.uc-body .plist span{margin-right: 5%;}
+.uc-body .plist span.price{width:15%;}
+.uc-body .plist span.tab{margin-right: 1%;width: 65px;
+display: block;
+float: left;}
+
+.uc-body .plist span.ad-t{height: 48px;width:22px;float: left;line-height: 48px;padding-top: 12px;margin-right: 0;}
+.uc-body .plist span.ad-b{width:60%;}
+
+
+/* 弹出框样式*/
+.payment-list{width:90%;}
+.cancel{width:90%;padding: 5px;
+ -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;  
+}
+.cancel2{width:160px;
+ -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;  
+}
+.cancel2 ul {padding: 5px;}
+.cancel2 ul li{line-height: 50px;}
+
+/*订单列表结束*/
+
+/*优惠卷*/
+.uc-coupon ul{width: 100%;overflow: hidden;margin: 2% 0;}
+.uc-coupon li{padding: 3%;background-color: #fff;margin-top: 1px;}
+.uc-coupon li input{width:70%;height: 2em;font-size: 1.3em;}
+.uc-coupon div{width: 100%;padding: 1% 0;}
+.uc-coupon span.co-1{height: 48px;width:48px;float: left;padding-top: 12px;margin-right: 0;
+overflow: hidden;}
+.uc-coupon span.co-bg img{height: 60px;float: left;}
+.uc-coupon span.co-txt{width:60%;height: 60px;}
+/*积分页面*/
+.points-top{ width:100%;
+  height: 88px;
+  padding-top: 20px;}
+  .points-top div{width: 96%;}
+   .uc-points li{padding: 3%;background-color: #fff;margin-top: 1px;}
+   .uc-points li img{width:18px;float: left;margin-right: 5px;}
+  .uc-points .ovp{position: relative;line-height: 1.5em;}
+   .uc-points .ov-right{position: absolute;right: 1em;top:1em;}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新增地址</title>
+<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0"/>
+<link type="text/css" rel="stylesheet" href="css/general.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/cart.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/address.css"/>
+<link href="lib/common.css" rel="stylesheet"/>
+<link href="css/uc.css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+<style id="J_style"></style>
+<script type="text/javascript">
+	! function() {
+		function b() {
+			var e, b = document.getElementById("J_style"),
+				c = document.documentElement.clientWidth || document.body.clientWidth,  //可视区域的宽高和body的宽高一样
+				d = 1; 
+			d = c / 640, e = 100 * d,
+			b.innerHTML = "html{font-size:" + e + "px;}", a = d;
+			window._z = d;
+		}
+		var a = 0;
+		b(), window.addEventListener("resize", b);
+	}();
+	window._idx = 10;
+</script>
+<script type="text/javascript">
+	$(function(){	
+		$('.classify_l_nav a').click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			$('.classify_con_rdiv>div:eq('+$(this).index()+')').show().siblings().hide();	
+		})
+	})
+</script>
+</head>
+<body style="background: #EDEDED;">
+	<div id="header">
+	    <div class="pull-left">
+	        <div class="return"><a href="uc.html"></a></div>
+	    </div>
+	    <div class="pull-right">
+	        <div class="message has-new"><a href="javascript:"></a></div>
+	    </div>
+	    <div class="text-center">
+	             <div class="fz-18"><a href="javascript:">新增收货地址</a></div>
+	    </div>
+	</div>
+	<ul class="address_div">
+		<li>
+			<span>联系人</span>
+			<input type="text" placeholder="你的姓名"/>
+		</li>
+		<li>
+			<span>联系电话</span>
+			<input type="text" placeholder="你的手机号"/>
+		</li>
+		<li>
+			<span>收货地址</span>
+			<a href="###">
+				<input type="text" placeholder="小区、写字楼、学校、街道"/>
+			</a>
+		</li>
+		<li>
+			<span></span>
+			<input type="text" placeholder="楼层、门牌号" style="margin-left: 100px;"/>
+		</li>
+	</ul>
+	<div class="new_save_address">
+		<button>保存地址</button>
+	</div>
+	<div id="navbar">
+	    <div class="text-center bg-white">
+	        <a href="/" class="inline-block fz-12 home">首页</a>
+	        <a href="#" class="inline-block fz-12 category">点餐</a>
+	        <a href="#" class="inline-block fz-12 cart"><span><span>12</span></span>购物车</a>
+	        <a href="#" class="inline-block fz-12 mine col-red">我的</a>
+	    </div>
+	</div>
+	<div id="footer"></div>
+</body>
+</html>
+

@@ -1,0 +1,172 @@
+.order_distribution{
+	width:100%;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+.o_d_title{
+	width: 100%;
+	padding-left: 20px; 
+	font-size: 0.32rem;
+	line-height: 1rem;
+	border-bottom: 1px solid #e44c0b;
+}
+.o_d_information{
+	padding: 0px 20px;
+	overflow: hidden;
+	border-bottom: 1px solid #e44c0b;
+}
+.order_in_img{
+	width: 0.5rem;
+	float: left;
+	margin-top: 0.45rem;
+}
+.o_d_information span{
+	font-size: 0.3rem;
+	float: left;
+	color: #a0a0a0;
+}
+.order_in_right{
+	width: 0.25rem;
+	float: right;
+	margin-top: 0.55rem;
+}
+.order_time{
+	padding: 0px 20px;
+	margin-top: 0.25rem;
+	background:#FFFFFF;
+	overflow: hidden;
+}
+.order_t_title{
+	font-size:0.32rem;
+	line-height: 1rem;
+}
+.order_pay{
+	overflow: hidden;
+	background: #FFFFFF;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.order_p_way{
+	padding: 0px 20px;
+	font-size:0.32rem;
+	line-height: 1rem;
+	border-bottom: 1px solid #FE912C;
+}
+.order_p_con{
+	width: 100%;
+	background: #FFFFFF;
+}
+.order_p_list{
+	overflow: hidden;
+}
+.order_p_list li{
+	overflow: hidden;
+	margin-top: 20px;
+	padding: 0px 20px;
+}
+.o_pay_img{
+	float: left;
+	width: 0.6rem;
+}
+.order_p_list li span{
+	float: left;
+	font-size: 0.28rem;
+	line-height: 0.5rem;
+	margin-left: 20px;
+}
+.o_pay_state{
+	float: right;
+	width: 0.5rem;
+	margin-right: 2px;
+}
+.order_p_list table{
+	margin: 0px 20px;
+}
+th{
+	color: #A0A0A0;
+	font-size: 0.3rem;
+	font-weight: 100;
+	line-height: 0.6rem;
+}
+.order-discount{
+	background: #FFFFFF;
+	margin-top: 0.25rem;
+	padding: 0px 20px;
+	overflow: hidden;
+}
+.order_notice{
+	background: #FFFFFF;
+	margin-top: 0.25rem;
+	padding: 0px 20px;
+	overflow: hidden;
+}
+.o_notice_input{
+	width: 67%;
+	border: 1px solid #a0a0a0;
+	border-radius: 4px;
+	height: 20px;
+	padding: 5px;
+	margin-top: 0.18rem;
+	outline: none;
+}
+.order_favorable{
+	background: #FFFFFF;
+	margin-top: 0.25rem;
+}
+.order_total{
+	overflow: hidden;
+	padding: 0px 20px;
+	border-bottom: 1px solid #ededed;
+}
+.order_total span{
+	float: right;
+	font-size: 0.3rem;
+	line-height: 0.8rem;
+}
+.order_account{
+	margin-top: 0.25rem;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+.o_account_button{
+	background: #FE912C;
+	color: #FFFFFF;
+	font-size: 0.3rem;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #ededed;
+	float: right;
+	padding: 0px 0.5rem;
+}
+.o_amount_payable{
+	font-size:0.3rem;
+	line-height: 0.8rem;
+	float: right;
+	margin-right: 1rem;
+}
+
+/*配送信息显示*/
+.o_consignee{
+	width: 72%;
+	float: left;
+	padding-left: 10px;
+}
+.o_consignee div{
+	font-size:0.3rem;
+	line-height: 0.5rem;
+}
+.order_d_block{
+	overflow: hidden;
+	background: #FFFFFF;
+	display: none;
+	padding: 10px 0px 20px 20px;
+	border-bottom: 1px solid #FE912C;
+}
+.o_block_right{
+	width: 0.25rem;
+	float: right;
+	margin-top: 0.55rem;
+}
+.o_b_information{
+	overflow: hidden;
+	padding-right: 20px;
+}

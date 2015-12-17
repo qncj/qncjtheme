@@ -1,0 +1,56 @@
+@black: #222;
+@white: #fff;
+@red: #e34c0b;
+@gray: #a0a0a0;
+
+@bg_header: #383838;
+@bg_body: #ededed;
+@miao: #fe912c;
+@tao: #7e00ff;
+@te: @red;
+@xian: #4fc1e9;
+@shou: #ffce54;
+
+@aaa: #aaa;
+
+.fz(@size) {
+  font-size: @size;
+}
+
+.relative() {
+  position: relative;
+}
+
+.absolute() {
+  position: absolute;
+}
+
+.block() {
+  display: block;
+}
+
+.inline-block() {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.col-white() {
+  color: @white;
+}
+
+.text-center() {
+  text-align: center;
+}
+
+.with-padding() {
+  padding: 0 0.25em;
+}
+
+.fz-14() {
+  .fz(14px);
+}
+
+.round() {
+  border-radius: 50%;
+  overflow: hidden;
+}

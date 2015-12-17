@@ -1,0 +1,91 @@
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+#m-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  z-index: 500;
+}
+#m-category {
+  padding-top: 44px;
+}
+#m-category > .cate-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 28%;
+  max-width: 106px;
+  height: 100%;
+  z-index: 499;
+}
+#m-category > .cate-list > ul {
+  padding: 44px 0 50px;
+}
+#m-category > .cate-list > ul > li {
+  background-color: #ededed;
+  line-height: 44px;
+  border: 1px solid #dcdcdc;
+  border-top: none;
+  font-size: 15px;
+  text-align: center;
+}
+#m-category > .cate-list > ul > li.active {
+  background-color: #ffffff;
+  border-right: none;
+}
+#m-category > .fix-lists {
+  width: 30%;
+  max-width: 116px;
+  min-height: 90px;
+  background-color: #ffffff;
+}
+#m-category > .fixed-cate {
+  position: fixed;
+  z-index: 498;
+  top: 44px;
+  left: 0;
+  width: 100%;
+}
+#m-category > .fixed-cate > .fix-lists {
+  width: 30%;
+  max-width: 116px;
+  min-height: 34px;
+  background-color: #ffffff;
+}
+#m-category > .fixed-cate > .food-list-title {
+  line-height: 34px;
+  font-size: 15px;
+  background-color: #ededed;
+}
+#m-category > .food-lists > .food-list-wrapper > .food-list-title {
+  line-height: 34px;
+  font-size: 15px;
+  background-color: #ededed;
+}
+#m-category > .food-lists > .food-list-wrapper > .food-list > li {
+  background-color: #ffffff;
+  padding: 10px 0;
+  height: 70px;
+  position: relative;
+}
+#m-category > .food-lists > .food-list-wrapper > .food-list > li > .img-wrapper {
+  width: 90px;
+  height: 70px;
+  padding-right: 10px;
+}
+#m-category > .food-lists > .food-list-wrapper > .food-list > li > .content > .title {
+  line-height: 1em;
+}
+#m-category > .food-lists > .food-list-wrapper > .food-list > li > .content > .activity {
+  padding: 7px 0 5px;
+}
+#m-category > .food-lists > .food-list-wrapper > .food-list > li > .add-cart {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#m-category > .food-lists > .food-list-wrapper > .food-list > li > .add-cart > .btn-add-cart {
+  width: 30px;
+  height: 30px;
+}
