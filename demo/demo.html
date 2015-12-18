@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../css/common.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="../css/home.css" rel="stylesheet"/>
+    <script src="../js/jquery/jquery-1.7.2.min.js"></script>
+<script src="../js/jquery/jquery.event.drag-1.5.min.js"></script>
+<script src="../js/jquery/jquery.touchSlider.js"></script>
+<script src="../js/jquery/lyz.delayLoading.min.js" type="text/javascript"></script>
+    <style id="J_style"></style>
+      <script type="text/javascript">
+	! function() {
+		function b() {
+			var e, b = document.getElementById("J_style"),
+				c = document.documentElement.clientWidth || document.body.clientWidth,  //可视区域的宽高和body的宽高一样
+				d = 1; 
+			d = c / 640, e = 100 * d,
+			b.innerHTML = "html{font-size:" + e + "px;}", a = d;
+			window._z = d;
+		}
+		var a = 0;
+		b(), window.addEventListener("resize", b);
+	}();
+	window._idx = 10;
+    </script>
+</head>
+<body>
+<!-- 公共头开始 -->
+<div id="header">
+    <!--<div class="pull-left">
+        <a class="return" href="javascript:_.go();"></a>
+        <a class="locate fz-18" href="javascript:location.reload(true);">北京</a>
+    </div>-->
+    <div class="pull-right">
+        <a class="search" href="javascript:"></a>
+        <a class="message has-new" href="javascript:"></a>
+    </div>
+    <div class="text-center">
+        <a class="logo" href="../home/home.html"></a>
+        <div class="search-input">
+            <input type="text" name="wd"/>
+        </div>
+    </div>
+</div>
+<!-- 公共头结束 -->
+<!-- 页面内容开始 -->
+自定义内容
+<!-- 页面内容结束 -->
+<!-- 公共底部开始 -->
+<div id="footer">
+</div>
+<!-- 公共导航 -->
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="../home/home.html" class="home col-red">首页</a>
+        <a href="../" class="category">点餐</a>
+        <a href="../cart/cart.html" class="cart"><span><span class="cart-num">12</span></span>购物车</a>
+        <a href="../login/login.html" class="mine">我的</a>
+    </div>
+</div>
+</body>
+<!-- 公共js库引入 -->
+
+<script src="lib/common.js"></script>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入-->
+<script src="js/home.js"></script>
+</html>
