@@ -1,0 +1,184 @@
+.index_all{
+	width:100%;
+}
+.index_nav{
+	width: 100%;
+	overflow: hidden;
+	background: #383838;
+}
+.i_nav_div{
+	overflow: hidden;
+	padding: 0px 20px;
+	height: 1rem;;
+}
+.i_shopping_country{
+	color: #FFFFFF;
+	font-size:0.47rem;
+	float: left;
+	line-height: 60px;
+}
+.i_search{
+	float: left;
+	display: flex;
+	line-height: 60px;
+}
+.i_search input{
+	margin:15px 0px 0px 20px;
+	height: 30px;
+	width: 3rem;
+	padding: 0px 5px;
+	border:none;
+	border-radius: 6px;
+}
+.i_news{
+	float:right;
+	width:0.55rem;
+}
+.i_activity_area{
+	width: 100%;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+.i_activity_div{
+	overflow: hidden;
+	padding: 0px 20px;
+}
+.i_activity_div li{
+	float: left;
+	margin-top: 20px;
+}
+.i_activity_div li img{
+	float: left;
+	width: 0.6rem;
+}
+.i_activity_div li span{
+	float: left;
+	margin-left:10px;
+	color: #222222;
+	font-size: 0.25rem;
+	line-height: 0.6rem;
+}
+.i_autumn_div{
+	overflow: hidden;
+	background: #FFFFFF;
+	height: 200px;
+}
+.i_a_title{
+	color: #fe912c;
+	font-size: 0.42rem;
+	text-align: center;
+	line-height: 0.9rem;
+}
+.i_a_subtitle{
+	color: #222222;
+	text-align: center;
+	font-size: 0.26rem;
+	margin-bottom: 15px;
+}
+.i_a_subtitle span{
+	color: #fe912c;
+}
+.i_week_dish{
+	margin-top: 20px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 20px;
+	
+}
+.i_dish_title{
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.i_dish_title img{
+	width: 1.8rem;
+}
+.i_dish_title span{
+	font-size:0.3rem;
+	color: #FE912C;
+	text-align: center;
+}
+.i_week_activity{
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+}
+.i_week_activity li{
+	float: left;
+	font-size: 0.25rem;
+	width: 2.1rem;
+	border-right: 1px solid #c8c8c8;
+	margin: 20px 0px 15px;
+}
+.i_week_activity li img{
+	width: 0.2rem;
+	margin-left: 10px;
+}
+.i_dish_king{
+	overflow: hidden;
+}
+.i_dish_king li{
+	overflow: hidden;
+	background: #ffffff;
+	padding: 20px;
+	margin: 20px 0px 15px;
+}
+.i_dish_king li a{
+	overflow: hidden;
+}
+.i_dish_img{
+	width: 1.5rem;
+	height: 1.7rem;
+	margin-right:10px;
+}
+.i_dish_information{
+	width: 3rem;
+	text-align: left;
+}
+.i_greens_name{
+	font-size: 0.3rem;
+	float: left;
+}
+.i_greens_subtitle{
+	width: 3rem;
+	font-size: 0.25rem;
+	color: #a0a0a0;
+	float: left;
+	line-height: 0.4rem;
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.i_dish_icon{
+	width: 3rem;
+}
+.i_dish_icon img{
+	width: 0.2rem;
+}
+.i_dish_icon img {
+	width: 0.32rem;
+	float: left;
+	margin-right: 15px;
+	margin: 0px 15px 0px 0px;
+}
+.i_dish_price{
+	margin-top: 8px;
+}
+.i_dish_price span{
+	color: #fe912c;
+	float: left;
+}
+.i_current_price{
+	font-size: 0.4rem;
+	
+} 
+.i_original_price{
+	margin-left: 10px;
+	font-size: 0.3rem;
+	text-decoration: line-through;
+}
+.i_add_cart{
+	width: 0.8rem;
+	margin-top: 40px;
+}

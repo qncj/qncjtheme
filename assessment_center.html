@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>评价中心</title>
+<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0"/>
+<link type="text/css" rel="stylesheet" href="css/general.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/cart.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/address.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/evaluate.css"/>
+<link href="lib/common.css" rel="stylesheet"/>
+<link href="css/uc.css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+<style id="J_style"></style>
+<script type="text/javascript">
+	! function() {
+		function b() {
+			var e, b = document.getElementById("J_style"),
+				c = document.documentElement.clientWidth || document.body.clientWidth,  //可视区域的宽高和body的宽高一样
+				d = 1; 
+			d = c / 640, e = 100 * d,
+			b.innerHTML = "html{font-size:" + e + "px;}", a = d;
+			window._z = d;
+		}
+		var a = 0;
+		b(), window.addEventListener("resize", b);
+	}();
+	window._idx = 10;
+</script>
+<script type="text/javascript">
+	$(function(){	
+		$('.classify_l_nav a').click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			$('.classify_con_rdiv>div:eq('+$(this).index()+')').show().siblings().hide();	
+		})
+	});
+	$(function(){	
+		$('.new_save_address').click(function(){
+			$(".comment_success").fadeIn();
+			setTimeout($(".comment_success").fadeOut(3000));
+		})
+	});
+</script>
+</head>
+<body style="background: #EDEDED;">
+	<div class="comment_success">
+		<div>
+			<img src="images/success.png" class="c_success_img"/>
+		</div>
+		<div>您的评论已提交成功</div>
+	</div>
+	<div id="header">
+	    <div class="pull-left">
+	        <div class="return"><a href="uc.html"></a></div>
+	    </div>
+	    <div class="pull-right">
+	        <div class="message has-new"><a href="javascript:"></a></div>
+	    </div>
+	    <div class="text-center">
+	             <div class="fz-18"><a href="javascript:">评价中心</a></div>
+	    </div>
+	</div>
+	<div class="a_write_div">
+		<div class="a_write_title">
+			<img src="images/write.png" class="a_write_img"/>
+			<span>菜品评价</span>
+		</div>
+		<div class="a_write_text">
+			<textarea onkeyup="checkLength(this);" id="TextArea1"></textarea>
+			<div class="a_text_title">
+				<div>长度在100字以内</div>
+				<div>写下自己的体会和感受</div>
+				<div>可以为其他的小伙伴提供参考……</div>
+			</div>
+		</div>
+		<span class="wordage">剩余字数：<span id="sy" style="color:Red;">100</span></span>
+	</div>
+	<div id="navbar">
+	    <div class="text-center bg-white">
+	        <a href="/" class="inline-block fz-12 home">首页</a>
+	        <a href="#" class="inline-block fz-12 category">点餐</a>
+	        <a href="#" class="inline-block fz-12 cart"><span><span>12</span></span>购物车</a>
+	        <a href="#" class="inline-block fz-12 mine col-red">我的</a>
+	    </div>
+	</div>
+	<div id="footer">
+	</div>
+	<div class="new_save_address">
+		<button>提交评价</button>
+	</div>
+	<script type="text/javascript">
+	//textarea失去焦点事件
+	$(document).ready(function(){
+		$("#TextArea1").click(function(){
+	    	$(".a_text_title").css("display","none");
+	    });
+	});
+	//字数限制jquery
+	function checkLength(which) {
+		var maxChars = 100; //
+		if(which.value.length > maxChars){
+			alert("您出入的字数超多限制!");
+			// 超过限制的字数了就将 文本框中的内容按规定的字数 截取
+			which.value = which.value.substring(0,maxChars);
+			return false;
+		}else{
+			var curr = maxChars - which.value.length; //减去 当前输入的
+			document.getElementById("sy").innerHTML = curr.toString();
+			return true;
+		}
+	}
+	</script>	
+</body>
+</html>
+

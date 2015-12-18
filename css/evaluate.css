@@ -1,0 +1,134 @@
+.evaluate_div{
+	width: 100%;
+}
+.evaluate_div li{
+	width: 96.5%;
+	float: left;
+	padding: 0.2rem 0px 0.2rem 0.2rem;
+	margin-bottom: 0.2rem;
+	background: #FFFFFF;
+}
+.evaluate_img{
+	float: left;
+}
+.evaluate_img img{
+	float: left;
+	width:2rem;
+	height: 1.6rem;
+}
+.e_evaluate{
+	float: left;
+	margin-left: 0.2rem;
+	width: 3.8rem;
+}
+.e_evaluate div{
+	line-height: 0.4rem;
+}
+.e_img_name{
+	font-size: 0.32rem;
+}
+.e_img_title{
+	color: #BEBEBE;
+	font-size: 0.25rem;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 3.8rem;
+}
+.e_price_match{
+	width: 1.5rem;
+	float:left;
+}
+.e_img_price{
+	color: #FE912C;
+	font-size: 0.3rem;
+}
+.e_button{
+	border-radius: 5px;
+	float: right;
+	font-size: 0.3rem;
+	border: 1px solid#fe912c;
+	padding: 5px 15px;
+	color: #fe912c;
+	margin-top: 8px;
+}
+
+
+/*评价中心*/
+.a_write_div{
+	float: left;
+	width: 100%;
+	background: #FFFFFF;
+}
+.a_write_img{
+	width: 0.35rem;
+	float: left;
+	margin-right: 10px;
+}
+.a_write_title{
+	overflow: hidden;
+	padding: 10px 0.2rem;
+	width: 93.5%;
+	border-bottom: 1px solid #ededed;
+}
+.a_write_title span{
+	font-size:0.3rem;
+	float: left;
+}
+.a_write_text{
+	width: 93.5%;
+	overflow: hidden;
+	padding: 10px 0.2rem;
+}
+.a_write_text textarea{
+	float: left;
+	position: relative;
+	padding: 5px;
+	font-size: 0.28rem;
+	width: 96%;
+	height: 2.2rem;
+	resize: none;
+	outline: none;
+	border:none;
+}
+.wordage {
+	text-align: right;
+	font-size: 14px;
+	color: #5e5e5e;
+	margin: 0 10px 20px 20px;
+	float: right;
+}
+.a_text_title{
+	
+	position: absolute;
+}
+
+.a_text_title div{
+	font-size:0.25rem;
+	color: #b5b5b5;
+}
+
+
+/*评论成功弹出层*/
+.comment_success{
+	display: none;
+	width: 3.5rem;
+	border-radius: 5px;
+	z-index: 200;
+	opacity: 0.6;
+	position: absolute;
+	background: #333333;
+	top: 42.5%;
+	height: 1.5rem;
+	left: 1.4rem;
+}
+.c_success_img{
+	padding-top: 10px;
+	width: 0.6rem;
+}
+.comment_success div{
+	font-size: 0.3rem;
+	color: #ffffff;
+	text-align: center;
+}

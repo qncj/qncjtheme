@@ -1,0 +1,26 @@
+.contact_ul{
+	width: 80%;
+	margin: 0px auto;
+}
+.contact_ul li{
+	overflow: hidden;
+	margin-top: 20px;
+}
+.contact_ul li img{
+	width: 3.5rem;
+	height: 3.5rem;
+	float: left;
+}
+.contact_information{
+	margin-left: 20px;
+	width: 70%;
+	float: left;
+}
+.contact_information div{
+	font-size: 0.5rem;
+	font-weight: bold;
+	line-height: 1.3rem;
+}
+.padding-t10{
+	padding-top: 10px;
+}

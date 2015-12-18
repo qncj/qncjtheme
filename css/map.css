@@ -1,0 +1,90 @@
+.o_map_add{
+	overflow: hidden;
+	border-bottom: 1px solid #EDEDED;
+	width: 100%;
+}
+.o_map_add div{
+	font-size: 0.4rem;
+	line-height: 1rem;
+	float: left;
+	color: #FE912C;
+	width: 2rem;
+	text-align: center;
+	border-bottom: 2px solid #fe912c;
+}
+.o_map_select li{
+	float: left;
+	font-size: 0.3rem;
+	width: 97%;
+	padding: 0.2rem 0px 0.2rem 0.2rem;
+	border-bottom: 1px solid #EDEDED;
+}
+.o_map_gprs{
+	width: 0.3rem;
+	margin: 0px 10px 0px 0px;
+}
+.o_map_select span{
+	color: #FE912C;
+	float: left;
+}
+.o_map_specific{
+	padding-left: 0.5rem;
+	margin-top: 0.1rem;
+	color: #A0A0A0;
+}
+.o_map_cancel{
+	border: none;
+	color: #FFFFFF;
+	float: right;
+	background: #383838;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	outline: none;
+}
+.o_add_input{
+	float: left;
+	padding: 5px;
+	border-radius: 8px;
+	outline: none;
+	width: 3.5rem;
+	margin-top: 0.2rem;
+	margin-left: 0.35rem;
+}
+
+/*配送地址超出范围*/
+.mask {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.6;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	z-index: 100;
+}
+.coupon_succeed {
+	width: 5.5rem;
+	border-radius: 5px;
+	z-index: 200;
+	position: absolute;
+	background: #FFFFFF;
+	height: 130px;
+	left: 20px;
+	right: 20px;
+	top: 42%;
+	height: 2.5rem;
+}
+.coupon_succeed p {
+	font-size: 0.3rem;
+	color: #222222;
+	text-align: center;
+	padding: 15px 20px;
+	line-height: 0.5rem;
+}
+.coupon_ok {
+	line-height: 0.88rem;
+	font-size: 0.3rem;
+	text-align: center;
+	color: #FE912C;
+	border-top: 1px solid #ededed;
+}

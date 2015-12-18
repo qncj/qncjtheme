@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>我的优惠卷</title>
+    <link href="lib/common.css" rel="stylesheet"/>
+    <link href="css/uc.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="header">
+    <div class="pull-left">
+        <div class="return"><a href="uc.html"></a></div>
+    </div>
+    <div class="pull-right">
+        <div class="message has-new"><a href="javascript:"></a></div>
+    </div>
+    <div class="text-center">
+             <div class="fz-18"><a href="javascript:">我的优惠卷</a></div>
+    </div>
+</div>
+<div id="uc_body">
+<div class="uc-coupon col-gray">
+             <ul>
+              <li class="fz-16">
+                <span><input type="text" name="code" class="bod-gray1"  placeholder="输入兑换码"/></span>
+                <span class="pull-right">
+                <a href="javascript:show('#filter-coupon');" class="btn2 bg-red col-white">兑换</a>
+                </span> 
+              </li>
+             </ul>
+             <ul>
+              <li class="fz-13 text-center">
+              <span class="co-1 bg-red col-white">
+                  <div class="fz-20">¥40</div>
+                  <div class="fz-13">未使用</div>
+              </span>
+              <span class="co-bg">
+              <img src="images/uc/ucco1.png">
+              </span>
+              <span class="co-txt">
+                 <div><span class="bg-white col-red">40元菜君优惠券</span></div>
+                 <div><span class="bg-white col-gray">有效期至<font class="col-red">2015-10-18 23:59</font></span></div>
+                 <div><span class="bg-white col-gray">仅限用户购买xxxx,商品满30元可用</span></div>
+              </span></li>
+             </ul> 
+               <ul>
+              <li class="fz-13 text-center">
+              <span class="co-1 bg-gray col-white">
+                  <div class="fz-20">¥40</div>
+                  <div class="fz-13">已使用</div>
+              </span>
+              <span class="co-bg">
+                <img src="images/uc/ucco2.png">
+              </span>
+              <span class="co-txt bg-white col-gray">
+                 <div><span>40元菜君优惠券</span></div>
+                 <div><span>有效期至<font>2015-10-18 23:59</font></span></div>
+                 <div><span>仅限用户购买xxxx,商品满30元可用</span></div>
+              </span></li>
+             </ul> 
+             <ul>
+              <li class="fz-13 text-center">
+               <span class="co-1 bg-gray col-white">
+                  <div class="fz-20">¥40</div>
+                  <div class="fz-13">已过期</div>
+              </span>
+              <span class="co-bg">
+                <img src="images/uc/ucco2.png">
+              </span>
+              <span class="co-txt bg-white col-gray">
+                 <div><span>40元菜君优惠券</span></div>
+                 <div><span>有效期至<font>2015-10-18 23:59</font></span></div>
+                 <div><span>仅限用户购买xxxx,商品满30元可用</span></div>
+              </span></li>
+             </ul>   
+             <ul>
+              <li class="fz-13 text-center">
+              <span class="co-1 bg-gray col-white">
+                  <div class="fz-20">¥40</div>
+                  <div class="fz-13">已过期</div>
+              </span>
+              <span class="co-bg">
+                <img src="images/uc/ucco2.png">
+              </span>
+              <span class="co-txt bg-white col-gray">
+                 <div><span>40元菜君优惠券</span></div>
+                 <div><span>有效期至<font>2015-10-18 23:59</font></span></div>
+                 <div><span>仅限用户购买xxxx,商品满30元可用</span></div>
+              </span></li>
+             </ul>     
+             
+          
+</div>
+
+</div>
+
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="/" class="inline-block fz-12 home">首页</a>
+        <a href="#" class="inline-block fz-12 category">分类</a>
+        <a href="#" class="inline-block fz-12 cart"><span><span>12</span></span>购物车</a>
+        <a href="#" class="inline-block fz-12 mine col-red">我的</a>
+    </div>
+</div>
+<div id="footer">
+</div>
+<div class="overlay-container hidden" id="filter-coupon">
+    <div class="overlay-content-container">
+         <div class="overlay-content bg-white col-gray fz-18 text-center uc-body cancel">
+            <ul>
+              <li class="fz-16 plist ">
+                  <span>兑换码有误请重新输入</span>
+               </li><li>
+            <span class="col-red "><a href="javascript:hide('#filter-coupon');">确定</a></span>
+              </li>
+             </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script src="lib/lib.min.js"></script>
+<script src="js/home.js"></script>
+<script>
+function show(id){
+$(id).removeClass('hidden');
+
+}
+function hide(id){
+$(id).addClass('hidden');
+
+}
+</script>
+</html>

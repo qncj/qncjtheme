@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>搜索</title>
+<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0"/>
+<link type="text/css" rel="stylesheet" href="css/general.css"/>
+<link rel="stylesheet" rel="stylesheet" href="css/search.css"/>
+<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+<style id="J_style"></style>
+<script type="text/javascript">
+	! function() {
+		function b() {
+			var e, b = document.getElementById("J_style"),
+				c = document.documentElement.clientWidth || document.body.clientWidth,  //可视区域的宽高和body的宽高一样
+				d = 1; 
+			d = c / 640, e = 100 * d,
+			b.innerHTML = "html{font-size:" + e + "px;}", a = d;
+			window._z = d;
+		}
+		var a = 0;
+		b(), window.addEventListener("resize", b);
+	}();
+	window._idx = 10;
+</script>
+</head>
+<body style="background: #ededed;">
+	<div class="search_top">
+		<div class="search_t_div">
+			<a href="###" class="dilb fl search_up">
+				<img src="images/next.png"/>
+			</a>
+			<span class="search_input fl">
+				<img src="images/magnifying.png"/>
+				<input type="text" class="fl" placeholder="搜索"/>
+				
+			</span>
+			<button class="search_sarp">搜索</button>
+		</div>
+	</div>
+	<ul class="search_con">
+		<li class="search_hot" style="color: #222222;">热门搜索</li>
+		<li class="search_hot">葡萄柚</li>
+		<li class="search_hot">水果</li>
+		<li class="search_hot">排骨</li>
+		<li class="search_hot">牛肉</li>
+	</ul>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+.search_top{
+	width: 100%;
+	overflow: hidden;
+	background: #383838;
+}
+.search_t_div{
+	overflow: hidden;
+	padding: 0px 0px 0px 20px;
+	height: 1rem;
+}
+.search_up img{
+	width: 0.2rem;
+	float: left;
+	margin-top: 0.35rem;
+}
+.search_input input{
+	margin: 0.2rem 0px 0px 20px;
+	height: 0.6rem;
+	width: 3rem;
+	padding: 0px 5px 0px 25px;
+	border: none;
+	border-radius: 6px;
+}
+.search_con{
+	background: #FFFFFF;
+	width: 100%;
+}
+.search_con li{
+	height: 1rem;
+	font-size: 0.3rem;
+	color: #a0a0a0;
+	border-bottom: 1px solid #ededed;
+	line-height: 1rem;
+	padding-left: 20px;
+}
+.search_sarp{
+	width: 1rem;
+	height: 0.6rem;
+	background: #FE912C;
+	border-radius: 5px;
+	font-size: 0.25rem;
+	border: none;
+	float: right;
+	color: #fff;
+	margin: 0.2rem 20px 0px 0px;
+}
+.search_input{
+	position: relative;
+}
+.search_input img{
+	width: 0.3rem;
+	position: absolute;
+	z-index: 999;
+	left: 25px;
+	top: 18px;
+}

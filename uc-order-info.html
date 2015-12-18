@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>我的订单</title>
+    <link href="lib/common.css" rel="stylesheet"/>
+    <link href="css/uc.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="header">
+    <div class="pull-left">
+        <div class="return"><a href="uc.html"></a></div>
+    </div>
+    <div class="pull-right">
+        <div class="message has-new"><a href="javascript:"></a></div>
+    </div>
+    <div class="text-center">
+             <div class="fz-18"><a href="javascript:">我的订单</a></div>
+    </div>
+</div>
+<div id="uc_body">
+<div class="uc-body col-gray">
+             <ul>
+              <li class="fz-16 ">
+                <span><img src="images/uc/uco1.png">订单状态</span>
+                <span class="pull-right">
+                <a class="col-red">待付款</a>
+                </span> 
+              </li>
+              <li class="fz-13 plist">
+                 <div><span>订单号码：</span><span>12345678</span></div>
+                 <div><span>下单时间：</span><span>2015-09-18</span></div>
+                 <div><span>配送时间：</span><span>2015-09-19</span></div>
+                  <div><span>支付方式：</span><span>微信支付</span></div>
+              </li>
+              <li class="fz-16 col-red">
+                  实付款：250
+              </li>
+             </ul>
+             <ul>
+              <li class="fz-16 ">
+                <span><img src="images/uc/uco2.png">费用明细</span>
+                <span class="pull-right">
+                </span> 
+              </li>
+              <li class="fz-13 plist">
+                 <div><span><a>大盘鸡（含啤酒）</a></span><span class="pull-right price"> ¥20.00</span><span class="pull-right">X3</span></div>
+                 <div><span><a>木须肉—豆豉鲮鱼油麦菜</a></span><span class="pull-right price"> ¥13.00</span><span class="pull-right">X3</span></div>
+                 <div><span><a>尖椒土豆丝</a></span><span class="pull-right price">¥7.00</span><span class="pull-right">X3</span></div>
+              </li>
+               <li class="fz-13 plist col-red">
+                 <div><span><a>特权卷</a></span><span class="pull-right price"> －¥5.00</span></div>
+                 <div><span><a>满减优惠</a></span><span class="pull-right price"> －¥5.00</span></div>
+                </li>
+              <li class="fz-13 plist ">
+                 <span> 合计：</span><span class="pull-right">¥30</span>
+              </li>
+             </ul>
+               <ul>
+              <li class="fz-16 ">
+                <span><img src="images/uc/uco3.png">收货信息</span>
+                <span class="pull-right">
+                </span> 
+              </li>
+              <li class="fz-13 plist">
+              <span class="ad-t">
+              <img src="images/uc/uco4.png">
+              </span>
+              <span class="ad-b">
+                 <div><span class="tab">收&nbsp;获&nbsp;人:</span><span>cyc</span><span class="pull-right"> 18232557833</span></div>
+                 <div><span class="tab">收货地址：</span><span>北京市回龙观龙腾苑5区13号楼1单元602室</span></div>
+              </span></li>
+             </ul>  
+              <ul>
+              <li class="fz-16 ">
+                <span><img src="images/uc/uco5.png">配送信息</span>
+                <span class="pull-right">
+                </span> 
+              </li>
+              <li class="fz-13 plist">
+              <span class="ad-t">
+              
+              </span>
+               <span class="ad-b">
+                 <div><span class="tab">送&nbsp;获&nbsp;员:</span><span> 陈燕春</span></div>
+                 <div><span class="tab">联系方式：</span><span>18237475234</span></div>
+              </span>
+              </li>
+             </ul>  
+          
+</div>
+<div class="text-center uc-foot col-gray fz-13">
+            <span class="btn1 bg-red col-white fz-18"> <a href="javascript:show('#filter-payemnt');" >去支付</a></span>
+            <span class="btn1 bg-red col-white fz-18"> <a href="">去评价</a></span>
+            <span class="btn1 bg-red col-white fz-18"> <a href="uc-order-cancel.html">申请退款</a></span>
+            <span class="btn1 bg-red col-white fz-18"> <a href="">取消订单</a></span>
+</div>
+
+</div>
+
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="/" class="inline-block fz-12 home">首页</a>
+        <a href="#" class="inline-block fz-12 category">点餐</a>
+        <a href="#" class="inline-block fz-12 cart"><span><span>12</span></span>购物车</a>
+        <a href="#" class="inline-block fz-12 mine col-red">我的</a>
+    </div>
+</div>
+<div id="footer">
+</div>
+<div class="overlay-container hidden" id="filter-payemnt">
+    <div class="overlay-content-container">
+        <div class="overlay-content col-red fz-18 text-center payment-list ">
+
+            <span class="btn1 h2 bg-white"> <a href="javascript:hide('#filter-payemnt');">微信支付</a></span>
+            <span class="btn1 h2 bg-white"> <a href="javascript:hide('#filter-payemnt');">百度钱包</a></span>
+            <span class="btn1 h2 bg-white"> <a href="javascript:hide('#filter-payemnt');">储值</a></span>
+            <span class="btn1 h2 m2 bg-white"> <a href="javascript:hide('#filter-payemnt');">取消</a></span>
+
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="lib/lib.min.js"></script>
+<script src="js/home.js"></script>
+<script>
+function show(id){
+$(id).removeClass('hidden');
+
+}
+function hide(id){
+$(id).addClass('hidden');
+
+}
+
+
+
+</script>
+</html>
