@@ -1,0 +1,8 @@
+<!--#include file="../header.html"-->
+<!--#include file="../navtop.html"-->
+<!-- 页面内容开始 -->
+自定义内容
+<!-- 页面内容结束 -->
+<!-- 公共底部开始 -->
+<!--#include file="../navbar.html"-->
+<!--#include file="../footer.html"-->
