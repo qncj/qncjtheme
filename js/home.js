@@ -28,12 +28,12 @@ $(function () {
     });
     $('#m-week').find('.filter>div').on('click', function () {
         $foodFilterOverlay.init($(this).index());
-    });
+    });/*
     $('#today-banner').unslider({
         speed: 500,
         delay: 3000,
         dots: true,
         swipe: true,
         autoplay: false
-    })
+    })*/
 });
