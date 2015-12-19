@@ -1,8 +1,17 @@
 <!--#include file="../header.html"-->
 <!--#include file="../navtop.html"-->
-<!-- 页面内容开始 -->
-自定义内容
-<!-- 页面内容结束 -->
+<!--
+页面内容区
+ 可以有多个模块, 模块类名为module
+ 例子:
+
+ <div class="module" id="module-1">
+    some content
+ </div>
+ <div class="module" id="module-2">
+    some other content
+ </div>
+-->
 <!-- 公共底部开始 -->
 <!--#include file="../navbar.html"-->
 <!--#include file="../footer.html"-->

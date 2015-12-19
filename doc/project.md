@@ -7,9 +7,9 @@
  |
  +--doc # 文档目录
  |
- +--lib # 基础库目录
+ +--js # js脚本目录
  |
- +--template # 页面模板目录
+ +--demo # html示例
  |
  +--home # 首页页面目录
  |
@@ -19,9 +19,9 @@
 ## 新建页面
 
 ```bash
-cp -r template/ xxx
+cp -r demo/ xxx
 cd xxx
-mv template.html xxx.html
+mv demo.html xxx.html
 ```
 
 ## 约定

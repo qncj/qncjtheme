@@ -3,8 +3,8 @@
 ## 约定
 
 1. 所有自定义的公共库方法暴露在`window._`下
-2. `Zepto`占用`window.$`, 对`Zepto`的扩展放到`window.$`下
-3. 类型为`Zepto`的变量命名以`$`开头
+2. `Jquery`占用`window.$`, 对`Jquery`的扩展放到`window.$`下
+3. 类型为`Jquery`的变量命名以`$`开头
 
 ## 公共库 `window._`
 
@@ -12,9 +12,9 @@
 
 | name | type | desc |
 | --- | --- | --- |
-| $body | Zepto | `body`元素 |
-| $header | Zepto | `#header`元素 |
-| $navbar | Zepto | `#navbar`元素 |
+| $body | Jquery | `body`元素 |
+| $header | Jquery | `#header`元素 |
+| $navbar | Jquery | `#navbar`元素 |
 | | | |
 | touchStart | string | 触摸开始事件 |
 | touchMove | string | 触摸移动事件 |
@@ -55,7 +55,7 @@
 
 | name | type | desc |
 | --- | --- | --- |
-| content | string|Zepto | 浮屠内容 |
+| content | string|Jquery | 浮屠内容 |
 | \*hasMask | boolean | 是否阻止窗口滚动(这是iOS的bug), 默认为`true` |
 | \*destroyOnMaskClicked | boolean | 点击背景区是否销毁浮屠, 默认`false` |
 | \*hide | boolean | 构建后是否隐藏, 默认`false` |
@@ -105,25 +105,25 @@
 
 返回当前`href`中搜索字段
 
-## `Zepto`扩展
+## `Jquery`扩展
 
 - *static* `ajax` *`XMLHttpRequest`*
 
 重构`ajax`方法, 如果返回错误码为`401`, 则跳转到登录页
 
-- `cssAnimateOnce` *`Zepto`*
+- `cssAnimateOnce` *`Jquery`*
 
 执行单次css动画
 
-- `tipsBox` *`Zepto`*
+- `tipsBox` *`Jquery`*
 
 弹起小浮屠, 参考首页点击购物车效果
 
-- `forceShow` *`Zepto`*
+- `forceShow` *`Jquery`*
 
 强制显示, 通过取消类`force-hidden`
 
-- `forceHide` *`Zepto`*
+- `forceHide` *`Jquery`*
 
 强制隐藏, 通过添加类`force-hidden`
 
@@ -160,9 +160,9 @@ if(error === true) {
 
 可以通过调用`$.validation.register(name, validator, msg, force)方法来注册新的验证函数
 
-- `unslider` *`Zepto`*
+- `unslider` *`Jquery`*
 
-图片轮播组件, 使用方法参考<https://github.com/acrazing/zepto.unslider>
+图片轮播组件, 使用方法参考<https://github.com/acrazing/Jquery.unslider>
 
 - `cookie` *`string|null`*
 
@@ -178,4 +178,4 @@ $.cookie(cookieName, value, options)
 
 - `data`, `animate`, `touch`
 
-`zepto`的标准组件, 使用方法请看官方文档, 可以按需引入
+`Jquery`的标准组件, 使用方法请看官方文档, 可以按需引入
