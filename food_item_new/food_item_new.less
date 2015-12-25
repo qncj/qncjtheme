@@ -1,0 +1,212 @@
+@import "../lib/base";
+@import "../lib/base-theme-green";
+
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+
+#m-banner {
+  margin-bottom: 5px;
+}
+
+.img-wrapper {
+  width: 100%;
+}
+
+#m-info {
+  > div {
+    .inline-block;
+    width: 33.3%;
+    padding: 12px 0;
+    > div {
+      border-left: 1px solid @red;
+      .text-center;
+      line-height: 15px;
+      > span {
+        .fz-12;
+        .inline-block;
+        line-height: 1em;
+        margin: 2.5px 0 0 8px;
+      }
+    }
+    &:first-child {
+      > div {
+        border-left: none;
+      }
+    }
+  }
+}
+
+#m-mark {
+  padding: (74-16)/4px 22px;
+  line-height: 1em;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  color: #5a5a5a;
+}
+
+#m-price {
+  line-height: 32px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+}
+
+#m-add-cart {
+  height: 44px;
+  > .add-cart {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid @bg_body;
+    height: 44px;
+    > input {
+      padding: 0 15px;
+      background-color: @bg_header;
+    }
+    > .pull-left {
+      line-height: 44px;
+      padding-left: 10%;
+      > span {
+        .inline-block;
+        margin-top: 3px;
+        line-height: 25px;
+        padding: 0 6px;
+      }
+    }
+  }
+}
+
+.fi-title {
+  color: #5a5a5a;
+  > .upon {
+    line-height: 26px;
+    .fz-15;
+    padding: 0 38px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 14px;
+      width: 50%;
+      bottom: 0;
+      height: 1px;
+      max-width: 280px;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 79, 4, 0)), color-stop(50%, rgba(255, 79, 4, 1)), to(rgba(255, 79, 4, 0)));
+      background-image: -moz-linear-gradient(left, rgba(255, 79, 4, 0) 0, rgba(255, 79, 4, 1) 50%, rgba(255, 79, 4, 0) 100%);
+      background-image: -webkit-linear-gradient(left, rgba(255, 79, 4, 0) 0, rgba(255, 79, 4, 1) 50%, rgba(255, 79, 4, 0) 100%);
+      background-image: -o-linear-gradient(left, rgba(255, 79, 4, 0) 0, rgba(255, 79, 4, 1) 50%, rgba(255, 79, 4, 0) 100%);
+      background-image: linear-gradient(to right, rgba(255, 79, 4, 0) 0, rgba(255, 79, 4, 1) 50%, rgba(255, 79, 4, 0) 100%);
+    }
+  }
+  > .down {
+    line-height: 18px;
+    .fz-10;
+    padding: 0 38px;
+  }
+}
+
+.fi-content {
+  padding: 12px 32px 24px;
+  > .img-wrapper {
+    width: 100%;
+  }
+  > .content {
+    padding: 8px;
+    .fz-12;
+    color: #5a5a5a;
+  }
+  .fi-summary {
+    margin-top: 30px;
+    background: url("img/summary.png") 4px 0 no-repeat;
+    background-size: 47/2px auto;
+    padding: 47/2px 4px 0;
+    line-height: 28px;
+    color: #5a5a5a;
+    .fz-12;
+  }
+}
+
+.fi-step {
+  margin: 0 -8px;
+  padding-top: 24px;
+  min-height: 288/2px;
+  position: relative;
+  > .title {
+    position: relative;
+    padding-bottom: 1px;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      bottom: 0;
+      height: 1px;
+      left: 0;
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 79, 4, 0)), color-stop(50%, rgba(255, 79, 4, 1)), to(rgba(255, 79, 4, 0)));
+      background-image: -moz-linear-gradient(left, rgba(255, 79, 4, 0) 0, rgba(255, 79, 4, 1) 50%, rgba(255, 79, 4, 0) 100%);
+      background-image: -webkit-linear-gradient(left, rgba(255, 79, 4, 0) 0, rgba(255, 79, 4, 1) 50%, rgba(255, 79, 4, 0) 100%);
+      background-image: -o-linear-gradient(left, rgba(255, 79, 4, 0) 0, rgba(255, 79, 4, 1) 50%, rgba(255, 79, 4, 0) 100%);
+      background-image: linear-gradient(to right, rgba(255, 79, 4, 0) 0, rgba(255, 79, 4, 1) 50%, rgba(255, 79, 4, 0) 100%);
+    }
+    > span {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      vertical-align: top;
+      font-size: 22px;
+      font-weight: bold;
+      color: #ff4f04;
+      border: 2px solid #ff4f04;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 50%;
+      line-height: 28px;
+    }
+  }
+  > .dt {
+    color: #5a5a5a;
+    .fz-12;
+    padding-left: 1em;
+    position: relative;
+    line-height: 22px;
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border: 2px solid #ff4f04;
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: 9px;
+      left: 0;
+    }
+  }
+  > .img-wrapper {
+    width: 131px;
+    position: absolute;
+    top: 24px;
+  }
+  &.left {
+    >.title {
+      margin-left: 18px;
+    }
+    > .dt {
+      margin-right: 138px;
+      margin-left: 32px;
+    }
+    > .img-wrapper {
+      right: 0;
+    }
+  }
+  &.right {
+    > .title {
+      text-align: right;
+      margin-right: 30px;
+    }
+    > .dt {
+      margin-left: 138px;
+      margin-right: 12px;
+    }
+    > .img-wrapper {
+      left: 0;
+    }
+  }
+}

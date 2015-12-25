@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../css/common.css" rel="stylesheet"/>
+    <link href="../css/theme-green.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="food_item_new.css" rel="stylesheet"/>
+<script src="../js/jquery/jquery-1.7.2.min.js"></script>
+<script src="../js/jquery/jquery.event.drag-1.5.min.js"></script>
+<script src="../js/jquery/jquery.touchSlider.js"></script>
+<script src="../js/jquery/lyz.delayLoading.min.js" type="text/javascript"></script>
+</head>
+<body class="theme-green">
+<!-- 公共头开始 -->
+<div id="header">
+    <div class="pull-left">
+        <a class="return" href="javascript:_.go();"></a>
+    </div>
+    <div class="pull-right">
+        <a class="share" href="javascript:"></a>
+    </div>
+    <div class="text-center">
+        <a class="fz-18">北京炸酱面</a>
+    </div>
+</div>
+<div class="module" id="m-banner">
+    <div class="img-wrapper"><img src="img/banner-1.png"/></div>
+</div>
+<div class="module" id="m-info">
+    <div>
+        <div>
+            <i class="icon icon-weight"></i>
+            <span>1884g</span>
+        </div>
+    </div>
+    <div>
+        <div>
+            <i class="icon icon-time"></i>
+            <span>43min</span>
+        </div>
+    </div>
+    <div>
+        <div>
+            <i class="icon icon-energy"></i>
+            <span>50卡</span>
+        </div>
+    </div>
+</div>
+<div class="module fz-16" id="m-mark">酱味正、菜码足，地道北京味儿</div>
+<div class="module" id="m-price">
+    <span class="fz-18 col-red">￥9.00&nbsp;&nbsp;</span>
+    <span class="fz-12 text-delete">￥18.00</span>
+</div>
+<div class="module" id="m-intro">
+    <div class="fi-title">
+        <div class="upon">商品介绍</div>
+        <div class="down">Introduction</div>
+    </div>
+    <div class="fi-content">
+        <div class="img-wrapper"><img src="img/intro-1.png"/></div>
+        <div class="content">北方人爱吃面，老北京的炸酱面尤其闻名天下，一道
+            最普通的面食里却蕴藏着四季，随着时节变化食材也在改变：初春有掐头去
+            尾的豆芽菜、小水萝卜缨；春末有青蒜、香椿芽、青豆嘴等；等到初夏则是
+            新蒜、黄瓜丝、扁豆丝了。菜君各处搜罗找来了这些春、夏食材，配以一碗
+            好酱，希望你在家也能吃到地道的炸酱面。
+        </div>
+        <div class="fi-summary">菜君曰：吃遍了世界后，还是想回家亲手做碗面满足自己。</div>
+    </div>
+</div>
+<div class="module" id="m-step">
+    <div class="fi-title">
+        <div class="upon">烹饪步骤</div>
+        <div class="down">procedure</div>
+    </div>
+    <div class="fi-content">
+        <div class="fi-step right">
+            <div class="title"><span>1</span></div>
+            <div class="dt">准备一锅水，烧开后先放入
+                炸酱面料包加热后取出备用。
+            </div>
+            <div class="img-wrapper"><img src="img/step-1.png"/></div>
+        </div>
+        <div class="fi-step left">
+            <div class="title"><span>2</span></div>
+            <div class="dt">准备一锅水，烧开后先放入
+                炸酱面料包加热后取出备用。
+            </div>
+            <div class="img-wrapper"><img src="img/step-1.png"/></div>
+        </div>
+        <div class="fi-step right">
+            <div class="title"><span>3</span></div>
+            <div class="dt">准备一锅水，烧开后先放入
+                炸酱面料包加热后取出备用。
+            </div>
+            <div class="img-wrapper"><img src="img/step-1.png"/></div>
+        </div>
+    </div>
+</div>
+<div class="module bg-body" id="m-add-cart" data-id="{food_id}">
+    <div class="add-cart bg-white">
+        <input type="button" value="加入购物车" class="btn btn-fixed-submit pull-right"/>
+
+        <div class="pull-left">
+            <i class="icon icon-subtract"></i>
+            <span class="col-red fz-15 food-num-val">4</span>
+            <i class="icon icon-add"></i>
+        </div>
+    </div>
+</div>
+</body>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入-->
+<script src="food_item_new.js"></script>
+</html>
